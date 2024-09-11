@@ -1,15 +1,15 @@
 "use client";
 import styles from "@/app/ui/styles/contact.module.css"
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 import CustomHero from "../ui/components/custom-hero/custom-hero";
 import hero from "@/public/hero/contact.png"
 
 export default function Contact () {
 
 
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    // const [isSubmitting, setIsSubmitting] = useState(false);
+    // const [isSubmitted, setIsSubmitted] = useState(false);
     return (
         <>
             <main>
@@ -88,7 +88,7 @@ export default function Contact () {
                             <button
                                 type="submit"
                                 className="w-full md:w-max px-8 py-3 bg-faq-ash font-heading text-white text-lg mt-6"
-                                disabled={isSubmitting}
+                                // disabled={isSubmitting}
                             >
                                 Submit Message
                                 {/* {isSubmitting ? "Submitting..." : "Submit Message"} */}
