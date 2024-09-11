@@ -2,6 +2,8 @@
 import styles from "@/app/ui/styles/contact.module.css"
 import Image from "next/image";
 import { useState } from "react";
+import CustomHero from "../ui/components/custom-hero/custom-hero";
+import hero from "@/public/hero/contact.png"
 
 export default function Contact () {
 
@@ -11,6 +13,7 @@ export default function Contact () {
     return (
         <>
             <main>
+                <CustomHero image={hero} title="Contact Us" />
                 <div className="md:flex flex-none md:flex-1 mx-4 md:mx-32 my-8 md:my-20">
                     <div className="flex-1"></div>
                     <div className="flex-1">
@@ -94,14 +97,14 @@ export default function Contact () {
                     </section>
                     <section className="flex-1 mx-12">
                         <div className="flex mb-8">
-                            <Image src="/contact/phone.png" alt="phone image" height={50} width={70} />
+                            <Image src="/contact/phone.png" alt="phone image" height={50} width={70} priority={true} quality={100}/>
                             <div className="ml-8 my-auto">
                                 <p className="font-heading mb-2 text-2xl">Calling Support</p>
                                 <span><a href="tel:+12679947800">(267) 994-7800</a></span>
                             </div>
                         </div>
                         <div className="flex mb-8">
-                            <Image src="/contact/email.png" alt="phone image" height={50} width={70} />
+                            <Image src="/contact/email.png" alt="phone image" height={50} width={70} priority={true} quality={100}/>
                             <div className="ml-8 my-auto">
                                 <p className="font-heading mb-2 text-2xl">Email Information</p>
                                 <span><a href="mailto:+info@aligningmindsnetwork.com">info@aligningmindsnetwork.com</a></span>
@@ -109,7 +112,7 @@ export default function Contact () {
                         </div>
                         <div className="flex mb-8">
                             <div>
-                                <Image src="/contact/address.png" alt="phone image" height={50} width={70} />
+                                <Image src="/contact/address.png" alt="phone image" height={50} width={70} priority={true} quality={100}/>
                             </div>
                             <div className="ml-8 my-auto">
                                 <p className="font-heading mb-2 text-2xl">Address</p>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AboutUsScreen from "./ui/components/about-us-screen/about-us-screen";
 import FAQAccordion from "./ui/components/faq/faq";
+import HeroComponent from "./ui/components/hero-component/hero-component";
 
 interface ServiceInterface {
   title: string;
@@ -49,35 +50,35 @@ export default function Home() {
 
           <div className="h-48 md:h-72 flex justify-center text-white bg-purple  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
-                <h3 className="font-heading text-xl mb-2">Personalised Coaching, Deeply Aligned</h3>
-                <p className="text-sm">Forget generic programs. We craft one-on-one and group sessions tailor-made to your unique needs and aspirations.</p>    
+                <h3 className="font-heading text-xl mb-2">Expert Collaborators, Not Just Coaches</h3>
+                <p className="text-sm">Our coaches are more than industry veterans; they're skilled collaborators who co-create your roadmap to success.</p>    
             </div>
           </div>
 
           <div className=" h-48 md:h-72 flex justify-center text-white bg-pink  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
-                <h3 className="font-heading text-xl mb-2">Personalised Coaching, Deeply Aligned</h3>
-                <p className="text-sm">Forget generic programs. We craft one-on-one and group sessions tailor-made to your unique needs and aspirations.</p>    
+                <h3 className="font-heading text-xl mb-2">Beyond Coaching, a Transformation Ecosystem</h3>
+                <p className="text-sm">AMN is your one-stop shop for growth. We offer specialized learning and development programs.</p>    
             </div>
           </div>
+          <div className="h-48 md:h-72 flex justify-center text-white bg-purple  max-w-sm overflow-hidden rounded-2xl">
+            <div className="px-6 pb-8 mt-auto">
+                <h3 className="font-heading text-xl mb-2">Flexibility Woven into Your Success</h3>
+                <p className="text-sm">Choose from in-person, online, and hybrid coaching models that seamlessly integrate into your busy life.</p>    
+            </div>
+          </div>
+
           <div className="h-48 md:h-72 flex justify-center text-white bg-pink  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
-                <h3 className="font-heading text-xl mb-2">Personalised Coaching, Deeply Aligned</h3>
-                <p className="text-sm">Forget generic programs. We craft one-on-one and group sessions tailor-made to your unique needs and aspirations.</p>    
+                <h3 className="font-heading text-xl mb-2">Proven Methods, Innovate Approach</h3>
+                <p className="text-sm">We blend cutting-edge coaching methodologies with unique, research-backed tools and techniques.</p>    
             </div>
           </div>
 
           <div className="h-48 md:h-72 flex justify-center text-white bg-purple  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
-                <h3 className="font-heading text-xl mb-2">Personalised Coaching, Deeply Aligned</h3>
-                <p className="text-sm">Forget generic programs. We craft one-on-one and group sessions tailor-made to your unique needs and aspirations.</p>    
-            </div>
-          </div>
-
-          <div className="h-48 md:h-72 flex justify-center text-white bg-pink  max-w-sm overflow-hidden rounded-2xl">
-            <div className="px-6 pb-8 mt-auto">
-                <h3 className="font-heading text-xl mb-2">Personalised Coaching, Deeply Aligned</h3>
-                <p className="text-sm">Forget generic programs. We craft one-on-one and group sessions tailor-made to your unique needs and aspirations.</p>    
+                <h3 className="font-heading text-xl mb-2">Mindset Transformation at the Core</h3>
+                <p className="text-sm">At AMN, we understand that true transformation starts within.</p>    
             </div>
           </div>
         </div>
@@ -155,6 +156,8 @@ export default function Home() {
               alt="Schedule Free Consultation Images"
               width={1200}
               height={500}
+              priority={true}
+              quality={100}
             />
           </div>
         </div>

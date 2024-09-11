@@ -1,11 +1,15 @@
 import Image from "next/image";
 import OurRoleScreen from "../ui/components/our-role-screen/our-role-screen";
 import CoreValues from "../ui/components/core-values/core-values";
+import HeroComponent from "../ui/components/hero-component/hero-component";
+import heroImage from "../../public/hero/about.png";
+import ServicesHero from "../ui/components/hero-component/hero-component";
 
 export default function About() {
     return (
         <>
             <main>
+                <ServicesHero />
 
                 <section className="grid mt-10 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
                     <div className="">

@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'custom-gradient-1': 'linear-gradient(73deg, rgba(51,187,197,1) 0%, rgba(170,0,170,1) 100%)',
+        'hero-gradient': 'linear-gradient(229deg, rgba(51, 187, 197, 1) 0%, rgba(170, 0, 170, 1) 100%)',
       },
       colors: {
         pink: '#AA00AA',
@@ -20,7 +21,8 @@ const config: Config = {
         black: '#000000',
         'custom-cyan': 'rgb(51, 187, 197)',
         'purple-opacity': 'rgba(97, 75, 195, 0.27)',
-        'faq-ash': "#2D2D2D"
+        'faq-ash': "#2D2D2D",
+        'sidebar': "#E6E6E6",
       },
       fontFamily: {
         'heading': ['Playfair Display'],
