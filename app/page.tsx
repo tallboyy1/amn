@@ -28,7 +28,7 @@ import FAQAccordion from "./ui/components/faq/faq";
 //       content:  "Families that care for a disabled person can take a break from the daily grind that comes with being a caregiver for a disabled person thanks to respite care.",
 //       slug: "respite",
 //   }
-]
+// ]
 
 export default function Home() {
   return (
