@@ -21,7 +21,7 @@ export default function Contact () {
                         <h2 className="font-heading text-3xl">Let’s Get In Touch</h2>
                     </div>
                 </div>
-                <div className="md:flex flex-none md:flex-1 mx-4 md:mx-32 my-8 md:my-32">
+                <div className="md:flex md:flex-row flex flex-col-reverse md:flex-1 mx-4 md:mx-32 my-8 md:my-32">
                     <section className="flex-1">
                     {/* <form onSubmit={handleSubmit} className={styles.contactForm}> */}
                         <form className={styles.contactForm}>
@@ -96,26 +96,26 @@ export default function Contact () {
                             {/* {isSubmitted && <p className="mt-4 rounded-lg bg-green text-sm text-white py-4 px-8">Message sent successfully! We will revert momentarily.</p>} */}
                         </form>
                     </section>
-                    <section className="flex-1 mx-12">
-                        <div className="flex mb-8">
-                            <Image src="/contact/phone.png" alt="phone image" height={50} width={70} priority={true} quality={100}/>
-                            <div className="ml-8 my-auto">
+                    <section className="flex-1 mx-0 md:mx-12">
+                        <div className="md:flex mb-8">
+                            <Image src="/contact/phone.png" alt="phone image" height={50} width={70} priority={true} quality={100} className="w-14 md:w-16"/>
+                            <div className="mt-3 md:mt-0 md:ml-8 my-auto">
                                 <p className="font-heading mb-2 text-2xl">Calling Support</p>
                                 <span><a href="tel:+12679947800">(267) 994-7800</a></span>
                             </div>
                         </div>
-                        <div className="flex mb-8">
-                            <Image src="/contact/email.png" alt="phone image" height={50} width={70} priority={true} quality={100}/>
-                            <div className="ml-8 my-auto">
+                        <div className="md:flex mb-8">
+                            <Image src="/contact/email.png" alt="phone image" height={50} width={70} priority={true} quality={100} className="w-14 md:w-16"/>
+                            <div className="mt-3 md:mt-0 md:ml-8 my-auto">
                                 <p className="font-heading mb-2 text-2xl">Email Information</p>
                                 <span><a href="mailto:+info@aligningmindsnetwork.com">info@aligningmindsnetwork.com</a></span>
                             </div>
                         </div>
-                        <div className="flex mb-8">
+                        <div className="md:flex mb-8">
                             <div>
-                                <Image src="/contact/address.png" alt="phone image" height={50} width={70} priority={true} quality={100}/>
+                                <Image src="/contact/address.png" alt="phone image" height={50} width={70} priority={true} quality={100} className="w-14 md:w-16"/>
                             </div>
-                            <div className="ml-8 my-auto">
+                            <div className="mt-3 md:mt-0 md:ml-8 my-auto">
                                 <p className="font-heading mb-2 text-2xl">Address</p>
                                 <span>701 Cathedral Road <br />Suite 45- 1539 <br /> Philadelphia</span>
                             </div>

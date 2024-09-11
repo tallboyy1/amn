@@ -75,7 +75,7 @@ const FAQCard: React.FC = () => {
     };
   
   return (
-        <div className='my-20'>
+        <div className='my-10 md:my-20'>
             <div className='mx-4 md:w-9/12 grid grid-cols-1 lg:grid-cols-2 gap-4 justify-around md:mx-auto'>
                 <div>
                     {faqData.map((faq, index) => {
