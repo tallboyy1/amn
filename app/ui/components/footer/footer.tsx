@@ -30,8 +30,8 @@ export default function Footer() {
                                         <li className="mb-3"><Link href="/"><small>Home</small></Link></li>
                                         <li className="mb-3"><Link href="about"><small>About Us</small></Link></li>
                                         <li className="mb-3"><Link href="services"><small>Services</small></Link></li>
-                                        <li className="mb-3"><Link href="join-team"><small>Testimonials</small></Link></li>
-                                        <li className="mb-3"><Link href="employee-portal"><small>Contact Us</small></Link></li>
+                                        <li className="mb-3"><Link href="/"><small>Testimonials</small></Link></li>
+                                        <li className="mb-3"><Link href="/"><small>Contact Us</small></Link></li>
                                     </div>
                                 </div>
                             </ul>
@@ -44,10 +44,10 @@ export default function Footer() {
                                 <div className="flex gap-10">
                                     <div>
                                         <li className="mb-3"><Link href="/"><small>Privacy Policy</small></Link></li>
-                                        <li className="mb-3"><Link href="about"><small>Terms of Use</small></Link></li>
-                                        <li className="mb-3"><Link href="services"><small>Disclaimer</small></Link></li>
-                                        <li className="mb-3"><Link href="join-team"><small>Credits</small></Link></li>
-                                        <li className="mb-3"><Link href="employee-portal"><small>FAQ</small></Link></li>
+                                        <li className="mb-3"><Link href="/"><small>Terms of Use</small></Link></li>
+                                        <li className="mb-3"><Link href="/"><small>Disclaimer</small></Link></li>
+                                        <li className="mb-3"><Link href="/"><small>Credits</small></Link></li>
+                                        <li className="mb-3"><Link href="faq"><small>FAQ</small></Link></li>
                                     </div>
                                 </div>
                             </ul>

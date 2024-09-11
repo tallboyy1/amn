@@ -38,7 +38,7 @@ export default function Navbar() {
     },
     {
         name: 'SHOP',
-        href: '/blog',
+        href: '/shop',
     },
   ];
 
