@@ -1,34 +1,33 @@
 import Image from "next/image";
 import AboutUsScreen from "./ui/components/about-us-screen/about-us-screen";
 import FAQAccordion from "./ui/components/faq/faq";
-import HeroComponent from "./ui/components/hero-component/hero-component";
 
-interface ServiceInterface {
-  title: string;
-  image: string;
-  content: string;
-  slug: string;
-}
+// interface ServiceInterface {
+//   title: string;
+//   image: string;
+//   content: string;
+//   slug: string;
+// }
 
-const serviceData: ServiceInterface[] = [
-  {
-      title: "Adult Residential Program",
-      image: "/services/discover/service-1.png",
-      content:  "Through the residential program offered by Kind Heart Services, individuals with disabilities can live autonomous lives in their own homes.",
-      slug: "adult-residential-program",
-  },
-  {
-      title: "Community Support",
-      image: "/services/discover/service-2.png",
-      content:  "The Community Supports Program at Kind Heart Services provides specialized services to assist individuals with disabilities in carrying out daily duties.",
-      slug: "community-support",
-  },
-  {
-      title: "Respite",
-      image: "/services/discover/service-3.png",
-      content:  "Families that care for a disabled person can take a break from the daily grind that comes with being a caregiver for a disabled person thanks to respite care.",
-      slug: "respite",
-  }
+// const serviceData: ServiceInterface[] = [
+//   {
+//       title: "Adult Residential Program",
+//       image: "/services/discover/service-1.png",
+//       content:  "Through the residential program offered by Kind Heart Services, individuals with disabilities can live autonomous lives in their own homes.",
+//       slug: "adult-residential-program",
+//   },
+//   {
+//       title: "Community Support",
+//       image: "/services/discover/service-2.png",
+//       content:  "The Community Supports Program at Kind Heart Services provides specialized services to assist individuals with disabilities in carrying out daily duties.",
+//       slug: "community-support",
+//   },
+//   {
+//       title: "Respite",
+//       image: "/services/discover/service-3.png",
+//       content:  "Families that care for a disabled person can take a break from the daily grind that comes with being a caregiver for a disabled person thanks to respite care.",
+//       slug: "respite",
+//   }
 ]
 
 export default function Home() {
@@ -51,7 +50,7 @@ export default function Home() {
           <div className="h-48 md:h-72 flex justify-center text-white bg-purple  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
                 <h3 className="font-heading text-xl mb-2">Expert Collaborators, Not Just Coaches</h3>
-                <p className="text-sm">Our coaches are more than industry veterans; they're skilled collaborators who co-create your roadmap to success.</p>    
+                <p className="text-sm">Our coaches are more than industry veterans; they{`'`}re skilled collaborators who co-create your roadmap to success.</p>    
             </div>
           </div>
 
@@ -137,7 +136,7 @@ export default function Home() {
               Transforming Lives by Transforming Minds.
               Welcome to Aligning Minds Network - A Journey Towards Transformation.
               <br /><br />
-              Greetings, I am Princess Otigbu, your navigator and ally here at Aligning Minds Network. As you navigate our space, I want to extend a warm, personal welcome to you — a fellow traveler on the path of discovery and transformation. Here, we believe in nurturing your potential, seed by seed. Every experience, every challenge, is a bud waiting to bloom. We're not just coaches and educators; we're partners, tilling the soil of your potential and helping you cultivate the fruits of your talents and dreams.
+              Greetings, I am Princess Otigbu, your navigator and ally here at Aligning Minds Network. As you navigate our space, I want to extend a warm, personal welcome to you — a fellow traveler on the path of discovery and transformation. Here, we believe in nurturing your potential, seed by seed. Every experience, every challenge, is a bud waiting to bloom. We{`'`}re not just coaches and educators; we{`'`}re partners, tilling the soil of your potential and helping you cultivate the fruits of your talents and dreams.
               <br /><br />
               Our belief is simple yet profound: within each person lies an undiscovered universe of capability and brilliance. Our mission? To journey alongside you, illuminating the way as you uncover and weave together your unique talents and dreams, crafting a life and career rich with purpose and fulfilment.
               <br /><br />

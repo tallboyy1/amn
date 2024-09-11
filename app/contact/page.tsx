@@ -90,9 +90,10 @@ export default function Contact () {
                                 className="w-full md:w-max px-8 py-3 bg-faq-ash font-heading text-white text-lg mt-6"
                                 disabled={isSubmitting}
                             >
-                                {isSubmitting ? "Submitting..." : "Submit Message"}
+                                Submit Message
+                                {/* {isSubmitting ? "Submitting..." : "Submit Message"} */}
                             </button>
-                            {isSubmitted && <p className="mt-4 rounded-lg bg-green text-sm text-white py-4 px-8">Message sent successfully! We will revert momentarily.</p>}
+                            {/* {isSubmitted && <p className="mt-4 rounded-lg bg-green text-sm text-white py-4 px-8">Message sent successfully! We will revert momentarily.</p>} */}
                         </form>
                     </section>
                     <section className="flex-1 mx-12">

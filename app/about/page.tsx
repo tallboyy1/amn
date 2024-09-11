@@ -1,8 +1,6 @@
 import Image from "next/image";
 import OurRoleScreen from "../ui/components/our-role-screen/our-role-screen";
 import CoreValues from "../ui/components/core-values/core-values";
-import HeroComponent from "../ui/components/hero-component/hero-component";
-import heroImage from "../../public/hero/about.png";
 import ServicesHero from "../ui/components/hero-component/hero-component";
 
 export default function About() {
