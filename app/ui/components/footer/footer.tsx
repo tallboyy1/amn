@@ -59,7 +59,7 @@ export default function Footer() {
                                 <h3 className="mb-2 font-medium">Newsletter</h3>
                                 <div className="flex gap-10">
                                     <form className={`${styles.newsletter_input} flex justify-between py-2 pl-3 md:pl-5 pr-1 w-full rounded-lg bg-white`}>
-                                        <input type="email" className="rounded-full outline-none text-xs w-4/6" placeholder="Your email address"/>
+                                        <input type="email" className="rounded-full outline-none text-black text-xs w-4/6" placeholder="Your email address"/>
                                         <button type="submit" className="px-4 py-2 md:px-6 md:py-3 rounded-lg bg-faq-ash text-white text-xs">Subscribe</button>
                                     </form>
                                 </div>
