@@ -1,42 +1,105 @@
+"use client";
 import Image from "next/image";
 import AboutUsScreen from "./ui/components/about-us-screen/about-us-screen";
 import FAQAccordion from "./ui/components/faq/faq";
+import { useEffect, useState } from "react";
+import hero1 from "../public/hero/home/hero-1.png";
+import hero2 from "../public/hero/home/hero-1.png";
+import hero3 from "../public/hero/home/hero-1.png";
+import Link from "next/link";
 
-// interface ServiceInterface {
-//   title: string;
-//   image: string;
-//   content: string;
-//   slug: string;
-// }
 
-// const serviceData: ServiceInterface[] = [
-//   {
-//       title: "Adult Residential Program",
-//       image: "/services/discover/service-1.png",
-//       content:  "Through the residential program offered by Kind Heart Services, individuals with disabilities can live autonomous lives in their own homes.",
-//       slug: "adult-residential-program",
-//   },
-//   {
-//       title: "Community Support",
-//       image: "/services/discover/service-2.png",
-//       content:  "The Community Supports Program at Kind Heart Services provides specialized services to assist individuals with disabilities in carrying out daily duties.",
-//       slug: "community-support",
-//   },
-//   {
-//       title: "Respite",
-//       image: "/services/discover/service-3.png",
-//       content:  "Families that care for a disabled person can take a break from the daily grind that comes with being a caregiver for a disabled person thanks to respite care.",
-//       slug: "respite",
-//   }
-// ]
 
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const slides = [
+    {
+      image: hero1,
+      heading: "Welcome to Aligning Minds Network",
+      description:
+        "Transforming Lives by Transforming Minds ",
+    },
+    {
+      image: hero2,
+      heading: "Text 2",
+      description:
+        "Text 2",
+    },
+    {
+      image: hero3,
+      heading: "Text 3",
+      description:
+        "Text 3",
+    },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  const currentSlide = slides[currentIndex];
+
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <main className="">
+
       <section className="bg-hero-gradient py-8 text-center flex flex-col-reverse md:flex-col items-center justify-center" style={{height: "73vh"}}>
       </section>
-      
 
+      <div className="relative">
+        <div className="absolute inset-0" style={{ height: "80vh" }}>
+          <Image
+            src={currentSlide.image}
+            alt="Hero Image"
+            className="object-cover w-full"
+            sizes="100vw"
+            quality={100}
+            priority={true}
+            style={{ height: "80vh" }}
+          />
+        </div>
+        <div
+          className="w-72 md:w-96 ml-4 pb-4 md:pt-52 md:mb-0 md:ml-20 relative flex flex-col justify-end md:justify-center items-left"
+          style={{ height: "80vh" }}
+        >
+          <h1 className="text-3xl md:text-5xl my-3 text-white font-heading font-semibold">
+            {currentSlide.heading}
+          </h1>
+          <small className="text-white font-light">
+            {currentSlide.description}
+          </small>
+          <div className="my-4">
+            <button>
+              <Link
+                href="/"
+                className="text-white text-xs font-normal bg-pink px-4 py-4 rounded-md"
+                >
+                BOOK APPOINTMENT
+              </Link>
+            </button>
+          </div>
+          <div className="flex mt-3 md:ml-2">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                className={`h-3 w-3 mr-2 rounded-full bg-none border-2 border-white ${
+                  currentIndex === index ? "bg-hero-dash-blue" : "bg-white"
+                }`}
+                onClick={() => handleDotClick(index)}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      
 
 
 
