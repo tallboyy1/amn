@@ -9,7 +9,7 @@ import hero3 from "../public/hero/home/hero-1.png";
 import Link from "next/link";
 import Testimonials from "./ui/components/testimonials/testimonials";
 
-
+import styles from "@/app/ui/styles/home.module.css"
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,15 +23,15 @@ export default function Home() {
     },
     {
       image: hero2,
-      heading: "Text 2",
+      heading: "The Transformation Expert Network",
       description:
-        "Text 2",
+        "Transforming Lives by Transforming Minds",
     },
     {
       image: hero3,
-      heading: "Text 3",
+      heading: "Bettering Lives, Transforming Minds",
       description:
-        "Text 3",
+        "Transforming Lives by Transforming Minds",
     },
   ];
 
@@ -52,51 +52,50 @@ export default function Home() {
   return (
     <main className="">
 
-      <section className="bg-hero-gradient py-8 text-center flex flex-col-reverse md:flex-col items-center justify-center" style={{height: "73vh"}}>
-      </section>
-
       <div className="relative">
-        <div className="absolute inset-0" style={{ height: "80vh" }}>
-          <Image
-            src={currentSlide.image}
-            alt="Hero Image"
-            className="object-cover w-full"
-            sizes="100vw"
-            quality={100}
-            priority={true}
-            style={{ height: "80vh" }}
-          />
+        <div className="bg-hero-gradient py-8 text-center flex flex-col-reverse md:flex-col items-center justify-center" style={{height: "60vh"}}>
         </div>
-        <div
-          className="w-72 md:w-96 ml-4 pb-4 md:pt-52 md:mb-0 md:ml-20 relative flex flex-col justify-end md:justify-center items-left"
-          style={{ height: "80vh" }}
-        >
-          <h1 className="text-3xl md:text-5xl my-3 text-white font-heading font-semibold">
-            {currentSlide.heading}
-          </h1>
-          <small className="text-white font-light">
-            {currentSlide.description}
-          </small>
-          <div className="my-4">
-            <button>
-              <Link
-                href="/"
-                className="text-white text-xs font-normal bg-pink px-4 py-4 rounded-md"
-                >
-                BOOK APPOINTMENT
-              </Link>
-            </button>
+
+        <div className={`${styles.hero_container} relative md:-top-96 lg:-top-32 `}>
+          <div className="absolute mx-auto md:max-w-4xl lg:max-w-7xl inset-0 md:h-[30vh] lg:h-[60vh]">
+            <Image
+              src={currentSlide.image}
+              alt="Hero Image"
+              className={`${styles.hero_image} object-cover w-full`}
+              quality={100}
+              priority={true}
+            />
           </div>
-          <div className="flex mt-3 md:ml-2">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                className={`h-3 w-3 mr-2 rounded-full bg-none border-2 border-white ${
-                  currentIndex === index ? "bg-hero-dash-blue" : "bg-white"
-                }`}
-                onClick={() => handleDotClick(index)}
-              />
-            ))}
+          <div
+            className={`${styles.hero_text} w-64 md:96 ml-4 pb-4 md:px-12 md:pt-52 md:mb-0 md:ml-20 relative flex flex-col justify-end md:justify-center items-left`}
+          >
+            <h1 className="text-3xl md:text-5xl my-3 text-white font-heading font-semibold">
+              {currentSlide.heading}
+            </h1>
+            <small className="text-white font-light">
+              {currentSlide.description}
+            </small>
+            <div className="my-4">
+              <button>
+                <Link
+                  href="/"
+                  className="text-white text-xs font-normal bg-pink px-4 py-4 rounded-md"
+                  >
+                  BOOK APPOINTMENT
+                </Link>
+              </button>
+            </div>
+            <div className="flex mt-3 md:ml-2">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  className={`h-3 w-3 mr-2 rounded-full bg-none border-2 border-white ${
+                    currentIndex === index ? "bg-hero-dash-blue" : "bg-white"
+                  }`}
+                  onClick={() => handleDotClick(index)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import AboutUsScreen from "../ui/components/about-us-screen/about-us-screen";
 import CoreValues from "../ui/components/core-values/core-values";
 import CustomHero from "../ui/components/custom-hero/custom-hero";
+import OurRoleScreen from "../ui/components/our-role-screen/our-role-screen";
 import FAQCard from "../ui/components/page-faq/faq-page-card";
 import hero from "@/public/hero/faq.png"
 
@@ -15,7 +16,12 @@ export default function FAQ(){
                 </div>
                 <FAQCard />
                 <section>
-                    <AboutUsScreen />
+                    <div className="hidden md:block w-screen">
+                        <AboutUsScreen />
+                    </div>
+                    <div className="md:hidden">
+                        <OurRoleScreen />
+                    </div>
                 </section>
                 <section>
                     <CoreValues />
