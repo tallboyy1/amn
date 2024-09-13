@@ -99,24 +99,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      
-      <section className="mt-44">
+      <section className="">
         <div className="w-8/12 md:w-5/12 px-4 mx-auto text-center mb-10">
           <h2 className="font-heading font-bold text-purple text-3xl mb-5">Discover the AMN Difference: Unleash Your Extraordinary Potential</h2>
           <p className="mb-4 text-xs leading-6"><span className="font-bold">Do you yearn for a life brimming with purpose, fulfillment, and a sense of limitless possibility?</span> <br /> At Aligning Minds Network (AMN), we{`'`}re not just about coaching and training,; we{`'`}re your catalyst for transformation, guiding you from feeling stuck and unfulfilled to ignited and empowered.</p>
