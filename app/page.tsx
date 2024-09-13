@@ -7,6 +7,7 @@ import hero1 from "../public/hero/home/hero-1.png";
 import hero2 from "../public/hero/home/hero-1.png";
 import hero3 from "../public/hero/home/hero-1.png";
 import Link from "next/link";
+import Testimonials from "./ui/components/testimonials/testimonials";
 
 
 
@@ -246,7 +247,20 @@ export default function Home() {
         <div className="my-auto">
           <p className="md:w-56 leading-8">Join us at Aligning Minds Network, where your journey to achieving excellence is not just a goal – it{`'`}s a transformative experience that reshapes how you perceive, interact with, and conquer your world. Let{`'`}s unlock your extraordinary potential, together. Ready to embark on your journey?</p>
         </div>
+
+        <div className="mt-7 md:hidden">
+          <Link href="/about"><button className="bg-custom-cyan bg-custom-gradient-1 text-white text-sm py-3 px-5 border-2 border-white rounded-md">Schedule your free consultation today</button></Link>
+        </div>
+
+        {/* <div className="md:hidden flex justify-center items-center md:justify-start md:items-center">
+          <Link href="/schedule-free-consultation" passHref>
+            Schedule a Free Consultation
+          </Link>
+        </div> */}
+
       </section>
+
+      <Testimonials />
 
       <FAQAccordion />
     </main>
