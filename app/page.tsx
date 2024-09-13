@@ -90,7 +90,7 @@ export default function Home() {
                 <button
                   key={index}
                   className={`h-3 w-3 mr-2 rounded-full bg-none border-2 border-white ${
-                    currentIndex === index ? "bg-hero-dash-blue" : "bg-white"
+                    currentIndex === index ? "bg-hero-dash-blue bg-white" : ""
                   }`}
                   onClick={() => handleDotClick(index)}
                 />
