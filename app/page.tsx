@@ -28,28 +28,28 @@ export default function Home() {
       <section className="md:mt-16">
         <div className="w-full md:w-5/12 px-4 mx-auto text-center mb-10">
           <h2 className="font-heading font-bold text-purple text-2xl md:text-3xl mb-5">Discover the AMN Difference: Unleash Your Extraordinary Potential</h2>
-          <p className="mb-4 text-xs leading-6"><span className="font-bold">Do you yearn for a life brimming with purpose, fulfillment, and a sense of limitless possibility?</span> <br /> At Aligning Minds Network (AMN), we{`'`}re not just about coaching and training,; we{`'`}re your catalyst for transformation, guiding you from feeling stuck and unfulfilled to ignited and empowered.</p>
+          <p className="mb-4 text-xs leading-6"><span className="font-bold">Do you yearn for a life brimming with purpose, fulfillment, and a sense of limitless possibility?</span> <br /> At Aligning Minds Network (AMN), we{`'`}re not just about coaching and training; we{`'`}re your catalyst for transformation, guiding you from feeling stuck and unfulfilled to ignited and empowered.</p>
         </div>
 
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:w-9/12 w-11/12 mx-auto">
           <div className="h-48 md:h-72 flex justify-center text-white bg-pink max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
                 <h3 className="font-heading text-xl mb-2">Personalised Coaching, Deeply Aligned</h3>
-                <p className="text-sm">Forget generic programs. We craft one-on-one and group sessions tailor-made to your unique needs and aspirations.</p>    
+                <p className="text-sm">Forget generic programs. Discover coaching designed just for you, aligning your inner purpose with your goals for a life of true fulfillment.</p>    
             </div>
           </div>
 
           <div className="h-48 md:h-72 flex justify-center text-white bg-purple  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
                 <h3 className="font-heading text-xl mb-2">Expert Collaborators, Not Just Coaches</h3>
-                <p className="text-sm">Our coaches are more than industry veterans; they{`'`}re skilled collaborators who co-create your roadmap to success.</p>    
+                <p className="text-sm">Partner with experts who go beyond coaching, offering deep collaboration to help you unlock your fullest potential.</p>    
             </div>
           </div>
 
           <div className="h-48 md:h-72 flex justify-center text-white bg-pink  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
                 <h3 className="font-heading text-xl mb-2">Beyond Coaching, a Transformation Ecosystem</h3>
-                <p className="text-sm">AMN is your one-stop shop for growth. We offer specialized learning and development programs.</p>    
+                <p className="text-sm">Enter a holistic transformation ecosystem, where coaching, tools, and community unite to empower your personal and professional growth.</p>    
             </div>
           </div>
           <div className="h-48 md:h-72 flex justify-center text-white bg-purple  max-w-sm overflow-hidden rounded-2xl">
@@ -69,51 +69,12 @@ export default function Home() {
           <div className="h-48 md:h-72 flex justify-center text-white bg-purple  max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
                 <h3 className="font-heading text-xl mb-2">Mindset Transformation at the Core</h3>
-                <p className="text-sm">At AMN, we understand that true transformation starts within.</p>    
+                <p className="text-sm">At our core, we focus on transforming your mindset to unlock potential, overcome barriers, and achieve lasting personal growth.</p>    
             </div>
           </div>
           
         </div>
       </section>
-
-      {/* <section className="grid mt-10 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
-                    <div className="">
-                        <div className="relative md:max-w-sm md:mx-auto lg:w-7/12 lg:mx-auto">
-                            <Image src="/home/about-amn.png" alt="mission png" quality={100} priority={true} width={1200} height={900} className=""/>
-                            <Image src="/home/about-amn.png" alt="mission png" quality={100} priority={true} layout="fill" objectFit="contain"/>
-                        </div>
-                    </div>
-                    <div className="lg:h-max lg:mb-auto">
-                        <div
-                            className="mb-2"
-                            >
-                            <p className="text-xs md:mx-auto md:max-w-lg leading-7">About Aligning Minds Network</p>
-                            <h2 className="text-4xl md:mx-auto md:max-w-lg font-heading mb-2">Welcome to Aligning Minds Network</h2>
-                        </div>
-                        <div className="mb-6">
-                            <div>
-                                <p className="text-xs md:mx-auto md:max-w-lg leading-7">Transforming Lives by Transforming Minds Welcome to Aligning Minds Network - A Journey Towards Transformation <br /><br /> Greetings, I am Princess Otigbu, your navigator and ally here at  Aligning Minds Network. As you navigate our space, I want to extend a warm, personal welcome to you — a fellow traveler on the path of discovery and transformation. Here, we believe in nurturing your potential, seed by seed. Every experience, every challenge, is a bud waiting to bloom. We're not just coaches and educators; we're partners, tilling the soil of your potential and helping you cultivate the fruits of your talents and dreams. <br /><br /> Our belief is simple yet profound: within each person lies an undiscovered universe of capability and brilliance. Our mission? To journey alongside you, illuminating the way as you uncover and weave together your unique talents and dreams, crafting a life and career rich with purpose and fulfilment. <br /><br /> As you peruse our offerings, envision the future you can create. Whether you seek to elevate your personal life, professional career, or organisational culture, we are here to help chart the course to your ultimate destination. </p>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-
-      {/* <section className="grid mt-10 sm:grid-cols-1 lg:grid-cols-2 gap-4 lg:max-w-7xl mx-auto px-4 md:px-10 my-12 md:my-24">
-        <div className="flex justify-center">
-          <div className="relative lg:w-9/12">
-            <Image 
-              src="/home/about-amn.png" 
-              alt="mission png" 
-              quality={100} 
-              priority={true} 
-              layout="responsive" 
-              objectFit="contain" 
-              width={500} 
-              height={200} 
-              className=""
-            />
-          </div>
-        </div> */}
 
       <section className="grid my-10 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-8 md:gap-16  lg:max-w-7xl mx-auto px-4 md:px-7 my:12 md:my-24">
         <div className="">
@@ -157,9 +118,9 @@ export default function Home() {
       </section>
 
       <AboutUsScreen/>
-      <section className="md:flex gap-10 md:w-8/12 mx-4 md:mx-auto">
-        <div className="mb-8 md:mb-0 md:w-8/12">
-          <div className="">
+      <section className="lg:flex gap-10 lg:w-8/12 mx-4 lg:mx-auto">
+        <div className="mb-8 lg:mb-0 lg:w-8/12">
+          <div className="relative">
             <Image
               src="/home/schedule-free-consultation.png"
               alt="Schedule Free Consultation Images"
@@ -168,10 +129,13 @@ export default function Home() {
               priority={true}
               quality={100}
             />
+            <div className="hidden md:flex absolute bottom-6 left-6">
+              <Link href="/about"><button className="bg-custom-cyan bg-custom-gradient-1 text-white text-lg py-2 w-full font-heading px-3 rounded-md">Schedule your free consultation today</button></Link>
+            </div>
           </div>
         </div>
         <div className="my-auto">
-          <p className="md:w-56 leading-8 px-2 md:px-0 text-xs">Join us at Aligning Minds Network, where your journey to achieving excellence is not just a goal – it{`'`}s a transformative experience that reshapes how you perceive, interact with, and conquer your world. Let{`'`}s unlock your extraordinary potential, together. Ready to embark on your journey?</p>
+          <p className="lg:w-56 leading-8 px-2 md:px-0 text-xs">Join us at Aligning Minds Network, where your journey to achieving excellence is not just a goal – it{`'`}s a transformative experience that reshapes how you perceive, interact with, and conquer your world. Let{`'`}s unlock your extraordinary potential, together. Ready to embark on your journey?</p>
         </div>
 
         <div className="w-full mx-auto mt-7 md:hidden">
@@ -186,7 +150,9 @@ export default function Home() {
 
       </section>
 
-      <Testimonials />
+      <section id="testimonials">
+        <Testimonials />
+      </section>
 
       <div className="mx-4">
         <FAQAccordion />

@@ -92,7 +92,7 @@ export default function About() {
                         <div
                             className="mb-2"
                             >
-                            <p className="text-s mmd:mx-auto md:max-w-lg leading-7 mb-6">Who we are</p>
+                            <p className="text-s md:mx-auto md:max-w-lg leading-7 mb-6">Who we are</p>
                             <h2 className="text-4xl md:mx-auto md:max-w-lg font-heading mb-2">Pioneers of Transformation</h2>
                         </div>
                         <div className="mb-6">

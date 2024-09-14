@@ -23,6 +23,7 @@ const config: Config = {
         'purple-opacity': 'rgba(97, 75, 195, 0.27)',
         'faq-ash': "#2D2D2D",
         'sidebar': "#E6E6E6",
+        'navbar': 'rgba(255, 255, 255, 0.89)',
       },
       fontFamily: {
         'heading': ['Playfair Display'],

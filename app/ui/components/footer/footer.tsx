@@ -30,8 +30,8 @@ export default function Footer() {
                                         <li className="mb-3"><Link href="/"><small>Home</small></Link></li>
                                         <li className="mb-3"><Link href="about"><small>About Us</small></Link></li>
                                         <li className="mb-3"><Link href="services"><small>Services</small></Link></li>
-                                        <li className="mb-3"><Link href="/"><small>Testimonials</small></Link></li>
-                                        <li className="mb-3"><Link href="/"><small>Contact Us</small></Link></li>
+                                        <li className="mb-3"><Link href="/#testimonials"><small>Testimonials</small></Link></li>
+                                        <li className="mb-3"><Link href="/contact"><small>Contact Us</small></Link></li>
                                     </div>
                                 </div>
                             </ul>

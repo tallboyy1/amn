@@ -14,21 +14,21 @@ export default function HeroSection() {
   const slides = [
     {
       image: hero1,
-      heading: "Welcome to Aligning Minds Network",
+      heading: "Ignite Your Potential with Aligning Minds Network",
       description:
-        "Transforming Lives by Transforming Minds ",
+        "Unlock a transformative journey that blends deep insights with actionable strategies for lasting change.",
     },
     {
       image: hero2,
-      heading: "The Transformation Expert Network",
+      heading: "Elevate Your Life, Empower Your Mind",
       description:
-        "Transforming Lives by Transforming Minds",
+        "Harness the power of cutting-edge strategies to drive your success and redefine your future.",
     },
     {
       image: hero3,
-      heading: "Bettering Lives, Transforming Minds",
+      heading: "Discover the Power of Transformation with AMN",
       description:
-        "Transforming Lives by Transforming Minds",
+        "Uncover the personalized approach that fuels your success and ignites your passion.",
     },
   ];
 
@@ -63,10 +63,10 @@ export default function HeroSection() {
         className="w-72 md:w-96 ml-4 pb-4 md:pt-52 md:mb-0 md:ml-20 relative flex flex-col justify-end md:justify-center items-left"
         style={{ height: "80vh" }}
       >
-        <h1 className="text-3xl md:text-5xl my-3 text-white font-heading font-semibold">
+        <h1 className="text-3xl md:text-4xl my-3 text-white font-heading font-semibold">
           {currentSlide.heading}
         </h1>
-        <small className="text-white text-xl font-light">
+        <small className="text-white text-sm font-light">
           {currentSlide.description}
         </small>
         <div className="my-8 hidden md:flex">

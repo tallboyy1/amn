@@ -8,8 +8,6 @@ import hero from "@/public/hero/contact.png"
 export default function Contact () {
 
 
-    // const [isSubmitting, setIsSubmitting] = useState(false);
-    // const [isSubmitted, setIsSubmitted] = useState(false);
     return (
         <>
             <main>
@@ -23,9 +21,7 @@ export default function Contact () {
                 </div>
                 <div className="md:flex md:flex-row flex flex-col-reverse md:flex-1 mx-4 md:mx-32 my-8 md:my-32">
                     <section className="flex-1">
-                    {/* <form onSubmit={handleSubmit} className={styles.contactForm}> */}
                         <form className={styles.contactForm}>
-                            {/* Name input */}
                             <div className="mb-8">
                                 <input
                                 className={`${styles.input} py-5 px-5 text-xs w-full`}

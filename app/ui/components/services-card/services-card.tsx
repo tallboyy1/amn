@@ -34,8 +34,8 @@ const serviceData: serviceInterface[] = [
     },
     {
         image: "/about/services/services-5.png",
-        title: "Proven Methods, Innovate Approach",
-        slug: slugify("Proven Methods, Innovate Approach")
+        title: "Proven Methods, Innovative Approach",
+        slug: slugify("Proven Methods, Innovative Approach")
     },
     {
         image: "/about/services/services-6.png",

@@ -4,8 +4,8 @@ import Navbar from "./ui/components/navbar/navbar";
 import Footer from "./ui/components/footer/footer";
 
 export const metadata: Metadata = {
-  title: "Kind Hearts Service LLC",
-  description: "Transforming Lives, By Transforming Minds.",
+  title: "Aligning Minds Network",
+  description: "Transforming Lives, By Shifting Minds.",
   keywords: "",
   icons: {
     icon: '/favicon.ico',

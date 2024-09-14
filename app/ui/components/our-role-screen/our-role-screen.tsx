@@ -5,7 +5,7 @@ export default function OurRoleScreen() {
         <>
             <main className="hidden md:flex relative bg-blue-100 py-10">
                 <div 
-                    className="relative w-full h-96 bg-center bg-contain" 
+                    className="relative w-full h-96 bg-cover bg-top" 
                     style={{ 
                         backgroundImage: `url('/about/our-role-screen.png')` 
                     }}
