@@ -1,25 +1,29 @@
 import Image from "next/image";
 import OurRoleScreen from "../ui/components/our-role-screen/our-role-screen";
 import CoreValues from "../ui/components/core-values/core-values";
-import ServicesHero from "../ui/components/hero-component/hero-component";
+import hero from "@/public/hero/about.png"
+import CustomHero from "../ui/components/custom-hero/custom-hero";
 
 export default function About() {
     return (
         <>
             <main>
-                <ServicesHero />
+                <CustomHero image={hero} title="About Us" />
 
-                <section className="grid mt-10 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
+                <section className="grid my-10 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-16  lg:max-w-7xl mx-auto px-4 md:px-7 my:12 md:my-24">
                     <div className="">
-                        <div className="relative md:max-w-sm md:mx-auto lg:w-max lg:mx-auto">
-                            <Image src="/about/about-amn.png" alt="mission png" quality={100} priority={true} width={1200} height={900} className=""/>
+                        <div className="hidden md:flex mx-auto lg:w-max lg:mx-auto">
+                            <Image src="/about/about-amn.png" alt="mission png" quality={100} priority={true} width={500} height={200} className="mx-auto"/>
+                        </div>
+                        <div className="md:hidden mx-auto lg:w-max lg:mx-auto">
+                            <Image src="/about/about-amn-small.png" alt="mission png" quality={100} priority={true} width={500} height={200} className="mx-auto"/>
                         </div>
                     </div>
                     <div className="lg:h-max lg:mb-auto">
                         <div
                             className="mb-2"
                             >
-                            <p className="text-xs md:mx-auto md:max-w-lg leading-7">About Aligning Minds Network</p>
+                            <p className="text-sm md:mx-auto md:max-w-lg leading-7 mb-6">About Aligning Minds Network</p>
                             <h2 className="text-4xl md:mx-auto md:max-w-lg font-heading mb-2">Aligning Minds Network - Pioneers of Transformation</h2>
                         </div>
                         <div className="mb-6">
@@ -59,7 +63,7 @@ export default function About() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="mb-6">
+                        <div className="mb-2">
                             <div>
                                 <h2 className="text-2xl md:mx-auto md:max-w-lg font-heading mb-2">Our Commitment to Global Change</h2>
                                 <ul className="">
@@ -76,16 +80,19 @@ export default function About() {
                             </div>
                         </div>
                     </div>
+                    <div className="md:hidden mx-auto lg:w-max lg:mx-auto">
+                        <Image src="/about/about-amn-small-2.png" alt="mission png" quality={100} priority={true} width={500} height={200} className="mx-auto"/>
+                    </div>
                 </section>
 
                 <OurRoleScreen/>
 
-                <section className="grid mt-10 mb-40 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
+                <section className="flex flex-col-reverse md:grid mt-10 mb-12 md:mb-40 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
                     <div className="lg:h-max lg:mb-auto">
                         <div
                             className="mb-2"
                             >
-                            <p className="text-xs md:mx-auto md:max-w-lg leading-7">Who we are</p>
+                            <p className="text-s mmd:mx-auto md:max-w-lg leading-7 mb-6">Who we are</p>
                             <h2 className="text-4xl md:mx-auto md:max-w-lg font-heading mb-2">Pioneers of Transformation</h2>
                         </div>
                         <div className="mb-6">
@@ -110,14 +117,14 @@ export default function About() {
                         </div>
                     </div>
                     <div>
-                        <div className="md:max-w-lg md:mx-auto lg:w-max lg:mx-auto">
+                        <div className="max-w-full md:max-w-lg md:mx-auto lg:w-max lg:mx-auto">
                             <Image src="/about/about-pioneer.png" alt="mission png" quality={100} priority={true} width={500} height={200} className=""/>
                         </div>
                     </div>
                 </section>
 
 
-                <section className="md:grid flex flex-col-reverse sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
+                <section className="md:grid sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
                     <div>
                         <div className="md:max-w-md md:mx-auto lg:w-max lg:mx-auto">
                             <Image src="/about/our-mission.png" alt="mission png" quality={100} priority={true} width={500} height={200} className=""/>
@@ -127,7 +134,7 @@ export default function About() {
                         <div
                             className="mb-2"
                             >
-                            <p className="text-xs md:mx-auto md:max-w-lg leading-7">Our Mission</p>
+                            <p className="text-sm md:mx-auto md:max-w-lg leading-7 my-6">Our Mission</p>
                             <h2 className="text-4xl md:mx-auto md:max-w-lg font-heading mb-2">Shift, Transform, Impact: Empowering Transformation, Inspiring Lives </h2>
                         </div>
                         <div className="mb-6">
@@ -145,12 +152,12 @@ export default function About() {
 
 
 
-                <section className="grid mt-40 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
+                <section className="flex flex-col-reverse md:grid mt-12 md:mt-40 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-4  lg:max-w-7xl mx-auto px-4 md:px-10 my:12 md:my-24">
                     <div className="lg:h-max lg:mb-auto">
                         <div
                             className="mb-2"
                             >
-                            <p className="text-xs md:mx-auto md:max-w-lg leading-7">Our Vission</p>
+                            <p className="text-sm md:mx-auto md:max-w-lg leading-7 mb-6">Our Vission</p>
                             <h2 className="text-4xl md:mx-auto md:max-w-lg font-heading mb-2">Global Pioneers in Transformative Coaching and Development</h2>
                         </div>
                         <div className="mb-6">

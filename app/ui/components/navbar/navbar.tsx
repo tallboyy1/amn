@@ -45,7 +45,7 @@ export default function Navbar() {
 
   return (
     // <nav className="absolute bg-white top-2 md:top-4 left-2 md:left-4 right-2 md:right-4 z-50 rounded-xl bg-navbar">
-    <nav className="absolute bg-white top-8 sm:left-8 sm:right-8 md:top-4 left-4 md:left-16 lg:left-28 right-4 md:right-16 lg:right-28 z-50 rounded-xl bg-navbar">
+    <nav className="absolute bg-white top-8 sm:left-8 sm:right-8 md:top-4 left-4 md:left-8 lg:left-16 right-4 md:right-8 lg:right-16 z-50 rounded-xl bg-navbar">
       <div className="py-10 pl-2 pr-6 lg:px-4 flex items-center justify-between h-16">
         <div className="md:ml-4 flex items-center">
           <Image

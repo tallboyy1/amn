@@ -2,112 +2,37 @@
 import Image from "next/image";
 import AboutUsScreen from "./ui/components/about-us-screen/about-us-screen";
 import FAQAccordion from "./ui/components/faq/faq";
-import { useEffect, useState } from "react";
-import hero1 from "../public/hero/home/hero-1.png";
-import hero2 from "../public/hero/home/hero-1.png";
-import hero3 from "../public/hero/home/hero-1.png";
+
 import Link from "next/link";
 import Testimonials from "./ui/components/testimonials/testimonials";
+import HeroSection from "./ui/components/hero-section/hero-section";
 
-import styles from "@/app/ui/styles/home.module.css"
 
 export default function Home() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const slides = [
-    {
-      image: hero1,
-      heading: "Welcome to Aligning Minds Network",
-      description:
-        "Transforming Lives by Transforming Minds ",
-    },
-    {
-      image: hero2,
-      heading: "The Transformation Expert Network",
-      description:
-        "Transforming Lives by Transforming Minds",
-    },
-    {
-      image: hero3,
-      heading: "Bettering Lives, Transforming Minds",
-      description:
-        "Transforming Lives by Transforming Minds",
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 7000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
-  const currentSlide = slides[currentIndex];
-
-  const handleDotClick = (index: number) => {
-    setCurrentIndex(index);
-  };
-
   return (
     <main className="">
 
-      <div className="relative">
-        <div className="bg-hero-gradient py-8 text-center flex flex-col-reverse md:flex-col items-center justify-center" style={{height: "60vh"}}>
-        </div>
+      <HeroSection/>
 
-        <div className={`${styles.hero_container} relative md:-top-96 lg:-top-32 `}>
-          <div className="absolute mx-auto md:max-w-4xl lg:max-w-7xl inset-0 md:h-[30vh] lg:h-[60vh]">
-            <Image
-              src={currentSlide.image}
-              alt="Hero Image"
-              className={`${styles.hero_image} object-cover w-full`}
-              quality={100}
-              priority={true}
-            />
-          </div>
-          <div
-            className={`${styles.hero_text} w-64 md:96 ml-4 pb-4 md:px-12 md:pt-52 md:mb-0 md:ml-20 relative flex flex-col justify-end md:justify-center items-left`}
+      <div className="my-16 w-max mx-auto md:hidden">
+        <button>
+          <Link
+            href="/"
+            className="text-white text-xs font-normal bg-pink px-8 py-6 rounded-md"
           >
-            <h1 className="text-3xl md:text-5xl my-3 text-white font-heading font-semibold">
-              {currentSlide.heading}
-            </h1>
-            <small className="text-white font-light">
-              {currentSlide.description}
-            </small>
-            <div className="my-4">
-              <button>
-                <Link
-                  href="/"
-                  className="text-white text-xs font-normal bg-pink px-4 py-4 rounded-md"
-                  >
-                  BOOK APPOINTMENT
-                </Link>
-              </button>
-            </div>
-            <div className="flex mt-3 md:ml-2">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  className={`h-3 w-3 mr-2 rounded-full bg-none border-2 border-white ${
-                    currentIndex === index ? "bg-hero-dash-blue bg-white" : ""
-                  }`}
-                  onClick={() => handleDotClick(index)}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+            BOOK APPOINTMENT
+         </Link>
+        </button>
       </div>
 
-      <section className="">
-        <div className="w-8/12 md:w-5/12 px-4 mx-auto text-center mb-10">
-          <h2 className="font-heading font-bold text-purple text-3xl mb-5">Discover the AMN Difference: Unleash Your Extraordinary Potential</h2>
+      <section className="md:mt-16">
+        <div className="w-full md:w-5/12 px-4 mx-auto text-center mb-10">
+          <h2 className="font-heading font-bold text-purple text-2xl md:text-3xl mb-5">Discover the AMN Difference: Unleash Your Extraordinary Potential</h2>
           <p className="mb-4 text-xs leading-6"><span className="font-bold">Do you yearn for a life brimming with purpose, fulfillment, and a sense of limitless possibility?</span> <br /> At Aligning Minds Network (AMN), we{`'`}re not just about coaching and training,; we{`'`}re your catalyst for transformation, guiding you from feeling stuck and unfulfilled to ignited and empowered.</p>
         </div>
 
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:w-12/12 w-10/12 mx-auto">
-          <div className="h-48 md:h-72 flex justify-center text-white bg-pink  max-w-sm overflow-hidden rounded-2xl">
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:w-9/12 w-11/12 mx-auto">
+          <div className="h-48 md:h-72 flex justify-center text-white bg-pink max-w-sm overflow-hidden rounded-2xl">
             <div className="px-6 pb-8 mt-auto">
                 <h3 className="font-heading text-xl mb-2">Personalised Coaching, Deeply Aligned</h3>
                 <p className="text-sm">Forget generic programs. We craft one-on-one and group sessions tailor-made to your unique needs and aspirations.</p>    
@@ -147,6 +72,7 @@ export default function Home() {
                 <p className="text-sm">At AMN, we understand that true transformation starts within.</p>    
             </div>
           </div>
+          
         </div>
       </section>
 
@@ -172,10 +98,9 @@ export default function Home() {
                     </div>
                 </section> */}
 
-      <section className="grid mt-10 sm:grid-cols-1 lg:grid-cols-2 gap-4 lg:max-w-7xl mx-auto px-4 md:px-10 my-12 md:my-24">
-        {/* Left side: Image */}
+      {/* <section className="grid mt-10 sm:grid-cols-1 lg:grid-cols-2 gap-4 lg:max-w-7xl mx-auto px-4 md:px-10 my-12 md:my-24">
         <div className="flex justify-center">
-          <div className="relative md:max-w-sm lg:w-9/12">
+          <div className="relative lg:w-9/12">
             <Image 
               src="/home/about-amn.png" 
               alt="mission png" 
@@ -183,17 +108,27 @@ export default function Home() {
               priority={true} 
               layout="responsive" 
               objectFit="contain" 
-              width={600} 
-              height={400} 
+              width={500} 
+              height={200} 
               className=""
             />
+          </div>
+        </div> */}
+
+      <section className="grid my-10 sm:grid-cols-1 sm:max-w-2xl md:mx-auto md:max-w-1xl lg:grid-cols-2 gap-8 md:gap-16  lg:max-w-7xl mx-auto px-4 md:px-7 my:12 md:my-24">
+        <div className="">
+          <div className="hidden md:flex mx-auto lg:w-max lg:mx-auto">
+              <Image src="/home/about-amn.png" alt="mission png" quality={100} priority={true} width={500} height={200} className="mx-auto"/>
+          </div>
+          <div className="md:hidden mx-auto lg:w-max lg:mx-auto">
+              <Image src="/home/about-amn-small.png" alt="mission png" quality={100} priority={true} width={500} height={200} className="mx-auto"/>
           </div>
         </div>
 
         {/* Right side: Text */}
         <div className="lg:h-max lg:mb-auto mx-auto">
           <div className="mb-2">
-            <p className="text-xs md:max-w-lg leading-7">About Aligning Minds Network</p>
+            <p className="text-xs md:max-w-lg leading-7 mb-3">About Aligning Minds Network</p>
             <h2 className="text-4xl md:max-w-lg font-heading mb-2">
               Welcome to Aligning Minds Network
             </h2>
@@ -210,6 +145,14 @@ export default function Home() {
               As you peruse our offerings, envision the future you can create. Whether you seek to elevate your personal life, professional career, or organisational culture, we are here to help chart the course to your ultimate destination.
             </p>
           </div>
+          <Link href="about">
+            <div className="flex">
+                  <p className="text-sm w-max">Read More</p>
+                  <div className="my-auto ml-2">
+                    <Image src="/home/read-more-arrow.png" alt="Read More Arrow" height={20} width={12}/>  
+                  </div>
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -228,11 +171,11 @@ export default function Home() {
           </div>
         </div>
         <div className="my-auto">
-          <p className="md:w-56 leading-8">Join us at Aligning Minds Network, where your journey to achieving excellence is not just a goal – it{`'`}s a transformative experience that reshapes how you perceive, interact with, and conquer your world. Let{`'`}s unlock your extraordinary potential, together. Ready to embark on your journey?</p>
+          <p className="md:w-56 leading-8 px-2 md:px-0 text-xs">Join us at Aligning Minds Network, where your journey to achieving excellence is not just a goal – it{`'`}s a transformative experience that reshapes how you perceive, interact with, and conquer your world. Let{`'`}s unlock your extraordinary potential, together. Ready to embark on your journey?</p>
         </div>
 
-        <div className="mt-7 md:hidden">
-          <Link href="/about"><button className="bg-custom-cyan bg-custom-gradient-1 text-white text-sm py-3 px-5 border-2 border-white rounded-md">Schedule your free consultation today</button></Link>
+        <div className="w-full mx-auto mt-7 md:hidden">
+          <Link href="/about"><button className="bg-custom-cyan bg-custom-gradient-1 text-white text-lg py-3 w-full font-heading px-5 border-2 border-white rounded-md">Schedule your free consultation today</button></Link>
         </div>
 
         {/* <div className="md:hidden flex justify-center items-center md:justify-start md:items-center">
@@ -245,7 +188,9 @@ export default function Home() {
 
       <Testimonials />
 
-      <FAQAccordion />
+      <div className="mx-4">
+        <FAQAccordion />
+      </div>
     </main>
   );
 }

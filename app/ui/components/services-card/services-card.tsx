@@ -82,9 +82,9 @@ export default function ServicesCard(){
                                     quality={100}
                                     // className="object-cover w-full h-full"
                                     />
-                                <div className="text-left absolute bottom-0 left-0 right-0 mx-4 mb-2 pb-7">
+                                <div className="text-left absolute bottom-0 left-0 right-0 mx-4 mb-2 pb-4">
                                     <h2 className="text-xl md:text-xl text-wrap font-heading font-medium text-white mb-3">{service.title}</h2>
-                                    <span className="inline-block mt-4 text-white text-xs font-semibold">Read more</span>
+                                    <span className="inline-bloc ml-2 mt-4 text-white text-xs font-light">Read more</span>
                                 </div>
                             </div>
                         </Link>

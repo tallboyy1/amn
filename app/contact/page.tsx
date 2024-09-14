@@ -17,7 +17,7 @@ export default function Contact () {
                 <div className="md:flex flex-none md:flex-1 mx-4 md:mx-32 my-8 md:my-20">
                     <div className="flex-1"></div>
                     <div className="flex-1">
-                        <p>Contact Us</p>
+                        <p className="text-sm my-2">Contact Us</p>
                         <h2 className="font-heading text-3xl">Let’s Get In Touch</h2>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ export default function Contact () {
                                 />
                             </div>
                             {/* Email and Phone inputs */}
-                            <div className="flex md:gap-5 lg:gap-5 flex-wrap">
+                            <div className="lg:flex md:gap-5 lg:gap-5 lg:flex-wrap">
                                 <div className="w-full md:flex-1 lg:flex-1 mb-8">
                                 <input
                                     className={`${styles.input} py-5 px-5 text-xs w-full`}
@@ -75,7 +75,7 @@ export default function Contact () {
                             {/* Message input */}
                             <div className="mb-8">
                                 <textarea
-                                rows={10}
+                                rows={20}
                                 className={`${styles.input} py-5 px-5 text-xs w-full`}
                                 name="message"
                                 // value={formData.message}

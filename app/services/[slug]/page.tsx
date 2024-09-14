@@ -5,6 +5,7 @@ import CustomHero from "@/app/ui/components/custom-hero/custom-hero"
 import ServicesCard from "@/app/ui/components/services-card/services-card"
 import hero from "@/public/hero/services.png"
 import Image from 'next/image';
+import OurRoleScreen from '@/app/ui/components/our-role-screen/our-role-screen';
 
 
 interface serviceInterface {
@@ -146,6 +147,10 @@ const ServicePage = ({ params }: { params: Params }) => {
 
                     <section className=''>
                         <ServicesCard />
+                    </section>
+
+                    <section className='mt-9 lg:hidden'>
+                        <OurRoleScreen />
                     </section>
 
                     <CoreValues />

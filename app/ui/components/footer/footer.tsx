@@ -12,7 +12,7 @@ export default function Footer() {
                             <Image src={"/footer-logo.png"} alt="AMN Logo" height={90} width={150} priority={true} quality={100}/>
                         </div>
                         <div>
-                            <ul className="list-none">
+                            <ul className="list-none text-xs md:text-sm">
                                 <li className="mb-2"><small>Phone: (267) 994-7800</small></li>
                                 <li className="mb-2"><small>Email</small></li>
                                 <li className="mb-2"><small>coach@aligningmindsnetwork.com</small></li>
@@ -26,7 +26,7 @@ export default function Footer() {
                             <ul className="list-none">
                                 <h3 className="mb-5 font-medium">Other Pages</h3>
                                 <div className="flex gap-10">
-                                    <div>
+                                    <div className="text-xs md:text-sm">
                                         <li className="mb-3"><Link href="/"><small>Home</small></Link></li>
                                         <li className="mb-3"><Link href="about"><small>About Us</small></Link></li>
                                         <li className="mb-3"><Link href="services"><small>Services</small></Link></li>
@@ -42,7 +42,7 @@ export default function Footer() {
                             <ul className="list-none">
                                 <h3 className="mb-5 font-medium">Quick Links</h3>
                                 <div className="flex gap-10">
-                                    <div>
+                                    <div className="text-xs md:text-sm">
                                         <li className="mb-3"><Link href="/"><small>Privacy Policy</small></Link></li>
                                         <li className="mb-3"><Link href="/"><small>Terms of Use</small></Link></li>
                                         <li className="mb-3"><Link href="/"><small>Disclaimer</small></Link></li>
@@ -66,7 +66,7 @@ export default function Footer() {
                             </div>
                             <div className="lg:mt-10">
                                 <div>
-                                    <p className="lg:mb-0">Get the latest news & updates</p>
+                                    <p className="lg:mb-0 text-xs md:text-sm">Get the latest news & updates</p>
                                     <div className={`${""} mt-3 w-max flex`}>
                                         <a href="" className="mr-4">
                                             <Image 
