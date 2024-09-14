@@ -13,7 +13,7 @@ export default function FAQ(){
                 
                 <div className="mt-8 max-w-96 mx-auto text-center">
                     <h2 className="font-heading text-2xl mb-5">Popular Question</h2>
-                    <p className="mx-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod enim tempor incididunt ut labore et dolore magna aliqua</p>
+                    <p className="mx-4 text-sm">Explore our comprehensive FAQ section to find clear and concise answers to the most common questions. Reach out to us through the contact page for further inquiries.</p>
                 </div>
                 <FAQCard />
                 <section>
