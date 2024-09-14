@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import hero1 from "@/public/hero/home/hero-1.png";
-import hero2 from "@/public/hero/home/hero-1.png";
-import hero3 from "@/public/hero/home/hero-1.png";
+import hero2 from "@/public/hero/home/hero-2.png";
+import hero3 from "@/public/hero/home/hero-3.png";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -14,7 +14,7 @@ export default function HeroSection() {
   const slides = [
     {
       image: hero1,
-      heading: "Ignite Your Potential with Aligning Minds Network",
+      heading: "Welcome to Aligning Minds Network",
       description:
         "Unlock a transformative journey that blends deep insights with actionable strategies for lasting change.",
     },
