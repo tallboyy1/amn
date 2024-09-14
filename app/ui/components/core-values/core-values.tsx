@@ -5,7 +5,7 @@ export default function CoreValues() {
         <main className="pt-14 mx-4">
             <h3 className="w-max mx-auto">Core Values</h3>
             {/* <section className="w-max sm:w-10/12 mt-16 mb-20 mx-auto bg-white grid grid-cols-1 lg:grid-cols-5 gap-10"> */}
-            <section className="mt-16 mb-20 flex justify-around  flex-wrap gap-1">
+            <section className="mt-16 mb-20 grid md:flex justify-around md:flex-wrap gap-1">
                 <div className="mb-10 lg:mb-0 text-left w-44">
                     <h1 className="text-2xl h-16 mb-2 lg:mb-6 text-wrap font-heading leading-6">Integrity & Accountability</h1>
                     <span className="text-black w-max text-xs">Upholding ethical standards in every interaction and taking responsibility for our actions and outcomes.</span>
